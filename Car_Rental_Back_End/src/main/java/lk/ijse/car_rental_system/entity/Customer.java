@@ -19,7 +19,7 @@ public class Customer {
     private String address;
     @Id
     private String nic;
-    private String driverlicense;
+    private String driverlicen;
     private String email;
     private String contact;
     private String password;
