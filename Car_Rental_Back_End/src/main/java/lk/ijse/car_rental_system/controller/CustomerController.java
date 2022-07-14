@@ -3,7 +3,9 @@ package lk.ijse.car_rental_system.controller;
 import lk.ijse.car_rental_system.dto.CustomerDTO;
 import lk.ijse.car_rental_system.entity.Customer;
 import lk.ijse.car_rental_system.service.CustomerService;
+import lk.ijse.car_rental_system.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,32 +18,32 @@ public class CustomerController {
     @Autowired
     CustomerService customerService;
 
-    @GetMapping
-    public List<CustomerDTO> getAllCustomer(){
-        return customerService.getAllCustomer();
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseUtil getAllCustomer() {
+        return new ResponseUtil(200, "Ok", customerService.getAllCustomer());
     }
 
-    @PostMapping
-    public void saveCustomer(@ModelAttribute CustomerDTO customer){
+    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseUtil saveCustomer(@ModelAttribute CustomerDTO customer) {
         customerService.saveCustomer(customer);
+        return new ResponseUtil(200, "Saved", null);
     }
 
-    @PutMapping
-    public void updateCustomer(@RequestBody CustomerDTO customer) {
-
+    @PutMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseUtil updateCustomer(@RequestBody CustomerDTO customer) {
         customerService.updateCustomer(customer);
+        return new ResponseUtil(200, "Updated", null);
     }
 
-    @DeleteMapping(params = {"nic"})
-    public void deleteCustomer(@RequestParam String nic) {
-
+    @DeleteMapping(params = {"nic"}, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseUtil deleteCustomer(@RequestParam String nic) {
         customerService.deleteCustomer(nic);
+        return new ResponseUtil(200, "Deleted", null);
     }
 
-    @GetMapping(path = "/{nic}")
-    public CustomerDTO searchCustomer(@PathVariable String nic) {
-
-        return customerService.searchCustomer(nic);
+    @GetMapping(path = "/{nic}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseUtil searchCustomer(@PathVariable String nic) {
+        return new ResponseUtil(200, "Ok", customerService.searchCustomer(nic));
     }
 
 }
