@@ -1,3 +1,7 @@
+body{
+  scroll-behavior: smooth;
+}
+
 .navbar{
   margin-bottom: 0;
   border-radius: 0;
@@ -5,9 +9,13 @@
   
 }
 
+.navbar.black{
+  background: #000;
+}
 
 #homeImg img{
   width: 100vw;
   height: 100vh;
+  
 }
 
