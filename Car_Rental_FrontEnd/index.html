@@ -44,18 +44,18 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto me-4 fw-bold">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
+                <a class="nav-link active" aria-current="page" href="#homeImg"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="orders.html">Rental</a>
+                <a class="nav-link" href="#rental">Rental</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="item.html">Register</a>
+                <a class="nav-link" href="#">Register</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="customer.html">Sign in</a>
+                <a class="nav-link" href="#">Sign in</a>
               </li>
             </ul>
           </div>
@@ -78,16 +78,14 @@
                 <h5 class="mb-4 fs-4">Easy Car Rental Private limited</h5>
                 <a
                   class="btn btn-outline-light btn-lg m-2"
-                  href="#"
+                  href="#rental"
                   role="button"
-                  target="_blank"
                   >Rental Car</a
                 >
                 <a
                   class="btn btn-outline-light btn-lg m-2"
                   href="#"
                   role="button"
-                  target="_blank"
                   >Register</a
                 >
               </div>
@@ -96,18 +94,687 @@
         </div>
         <!-- Home Page -->
 
-        <div class="container-fluid">
-          <div class="row" style="border: 1px solid red">
+        <!-- Rent Car Start-->
+        <div class="container-fluid" id="rental">
+          <div class="row">
             <div class="col-xs-12 text-center">
               <h1 class="fs-1 fw-bold">AVAILABLE CARS</h1>
             </div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
+
+            <!-- Card 1 -->
+            <div class="col-md-4 p-5">
+              <div class="card shadow-lg">
+                <div
+                  class="bg-image hover-overlay ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <a href="#!">
+                    <div
+                      class=""
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+
+                  <!-- Start Images -->
+
+                  <div
+                    id="carouselExampleIndicators"
+                    class="carousel slide"
+                    data-bs-ride="true"
+                  >
+                    <div class="carousel-indicators">
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0"
+                        class="active bg-dark"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                        class="bg-dark"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                        class="bg-dark"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="assets/images/Car/one.jpg"
+                          class="d-block w-100 img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/Car/two.jpg"
+                          class="d-block w-100 img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/Car/three.jpg"
+                          class="d-block w-100 img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End  images-->
+                </div>
+
+                <!-- Text Start -->
+                <div class="card-body">
+                  <h5 class="card-title">BMW</h5>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <li>Transmission : Auto</li>
+                        <li>Passengers : 05</li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                      <ul>
+                        <li>Price : 50000</li>
+                        <li>Fuel Type : Petrol</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Button start -->
+                  <div class="d-grid gap-2 col-6 mx-auto">
+                    <a
+                      href="#!"
+                      class="btn btn-lg rounded-pill btn-light fw-bold"
+                      style="
+                        background-image: linear-gradient(
+                          to right,
+                          #1fa2ff 0%,
+                          #12d8fa 51%,
+                          #1fa2ff 100%
+                        );
+                      "
+                      >Rent</a
+                    >
+                  </div>
+                  <!-- Button End -->
+                </div>
+                <!-- Text End -->
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4 p-5">
+              <div class="card shadow-lg">
+                <div
+                  class="bg-image hover-overlay ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <a href="#!">
+                    <div
+                      class=""
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+
+                  <!-- Start Images -->
+
+                  <div id="twoImg" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button
+                        type="button"
+                        data-bs-target="#twoImg"
+                        data-bs-slide-to="0"
+                        class="active bg-dark"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#twoImg"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                        class="bg-dark"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#twoImg"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                        class="bg-dark"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="assets/images/Car/one.jpg"
+                          class="d-block w-100 img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/Car/two.jpg"
+                          class="d-block w-100 img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/Car/three.jpg"
+                          class="d-block w-100 img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End  images-->
+                </div>
+
+                <!-- Text Start -->
+                <div class="card-body">
+                  <h5 class="card-title">BMW</h5>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <li>Transmission : Auto</li>
+                        <li>Passengers : 05</li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                      <ul>
+                        <li>Price : 50000</li>
+                        <li>Fuel Type : Petrol</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Button start -->
+                  <div class="d-grid gap-2 col-6 mx-auto">
+                    <a
+                      href="#!"
+                      class="btn btn-lg rounded-pill btn-light fw-bold"
+                      style="
+                        background-image: linear-gradient(
+                          to right,
+                          #1fa2ff 0%,
+                          #12d8fa 51%,
+                          #1fa2ff 100%
+                        );
+                      "
+                      >Rent</a
+                    >
+                  </div>
+                  <!-- Button End -->
+                </div>
+                <!-- Text End -->
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4 p-5">
+              <div class="card shadow-lg">
+                <div
+                  class="bg-image hover-overlay ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <a href="#!">
+                    <div
+                      class=""
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+
+                  <!-- Start Images -->
+
+                  <div id="threeImg" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button
+                        type="button"
+                        data-bs-target="#threeImg"
+                        data-bs-slide-to="0"
+                        class="active bg-dark"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#threeImg"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                        class="bg-dark"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#threeImg"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                        class="bg-dark"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="assets/images/Car/one.jpg"
+                          class="d-block w-100 img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/Car/two.jpg"
+                          class="d-block w-100 img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/Car/three.jpg"
+                          class="d-block w-100 img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End  images-->
+                </div>
+
+                <!-- Text Start -->
+                <div class="card-body">
+                  <h5 class="card-title">BMW</h5>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <li>Transmission : Auto</li>
+                        <li>Passengers : 05</li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                      <ul>
+                        <li>Price : 50000</li>
+                        <li>Fuel Type : Petrol</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Button start -->
+                  <div class="d-grid gap-2 col-6 mx-auto">
+                    <a
+                      href="#!"
+                      class="btn btn-lg rounded-pill btn-light fw-bold"
+                      style="
+                        background-image: linear-gradient(
+                          to right,
+                          #1fa2ff 0%,
+                          #12d8fa 51%,
+                          #1fa2ff 100%
+                        );
+                      "
+                      >Rent</a
+                    >
+                  </div>
+                  <!-- Button End -->
+                </div>
+                <!-- Text End -->
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-4 p-5">
+              <div class="card shadow-lg">
+                <div
+                  class="bg-image hover-overlay ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <a href="#!">
+                    <div
+                      class=""
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+
+                  <!-- Start Images -->
+
+                  <div id="fourImg" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button
+                        type="button"
+                        data-bs-target="#fourImg"
+                        data-bs-slide-to="0"
+                        class="active bg-dark"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#fourImg"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                        class="bg-dark"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#fourImg"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                        class="bg-dark"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="assets/images/Car/one.jpg"
+                          class="d-block w-100 img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/Car/two.jpg"
+                          class="d-block w-100 img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/Car/three.jpg"
+                          class="d-block w-100 img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End  images-->
+                </div>
+
+                <!-- Text Start -->
+                <div class="card-body">
+                  <h5 class="card-title">BMW</h5>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <li>Transmission : Auto</li>
+                        <li>Passengers : 05</li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                      <ul>
+                        <li>Price : 50000</li>
+                        <li>Fuel Type : Petrol</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Button start -->
+                  <div class="d-grid gap-2 col-6 mx-auto">
+                    <a
+                      href="#!"
+                      class="btn btn-lg rounded-pill btn-light fw-bold"
+                      style="
+                        background-image: linear-gradient(
+                          to right,
+                          #1fa2ff 0%,
+                          #12d8fa 51%,
+                          #1fa2ff 100%
+                        );
+                      "
+                      >Rent</a
+                    >
+                  </div>
+                  <!-- Button End -->
+                </div>
+                <!-- Text End -->
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-4 p-5">
+              <div class="card shadow-lg">
+                <div
+                  class="bg-image hover-overlay ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <a href="#!">
+                    <div
+                      class=""
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+
+                  <!-- Start Images -->
+
+                  <div id="fiveImg" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button
+                        type="button"
+                        data-bs-target="#fiveImg"
+                        data-bs-slide-to="0"
+                        class="active bg-dark"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#fiveImg"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                        class="bg-dark"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#fiveImg"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                        class="bg-dark"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="assets/images/Car/one.jpg"
+                          class="d-block w-100 img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/Car/two.jpg"
+                          class="d-block w-100 img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/Car/three.jpg"
+                          class="d-block w-100 img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End  images-->
+                </div>
+
+                <!-- Text Start -->
+                <div class="card-body">
+                  <h5 class="card-title">BMW</h5>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <li>Transmission : Auto</li>
+                        <li>Passengers : 05</li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                      <ul>
+                        <li>Price : 50000</li>
+                        <li>Fuel Type : Petrol</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Button start -->
+                  <div class="d-grid gap-2 col-6 mx-auto">
+                    <a
+                      href="#!"
+                      class="btn btn-lg rounded-pill btn-light fw-bold"
+                      style="
+                        background-image: linear-gradient(
+                          to right,
+                          #1fa2ff 0%,
+                          #12d8fa 51%,
+                          #1fa2ff 100%
+                        );
+                      "
+                      >Rent</a
+                    >
+                  </div>
+                  <!-- Button End -->
+                </div>
+                <!-- Text End -->
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-4 p-5">
+              <div class="card shadow-lg">
+                <div
+                  class="bg-image hover-overlay ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <a href="#!">
+                    <div
+                      class=""
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+
+                  <!-- Start Images -->
+
+                  <div id="sixImg" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button
+                        type="button"
+                        data-bs-target="#sixImg"
+                        data-bs-slide-to="0"
+                        class="active bg-dark"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#sixImg"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                        class="bg-dark"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#sixImg"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                        class="bg-dark"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="assets/images/Car/one.jpg"
+                          class="d-block w-100 img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/Car/two.jpg"
+                          class="d-block w-100 img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="assets/images/Car/three.jpg"
+                          class="d-block w-100 img-fluid"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End  images-->
+                </div>
+
+                <!-- Text Start -->
+                <div class="card-body">
+                  <h5 class="card-title">BMW</h5>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <ul>
+                        <li>Transmission : Auto</li>
+                        <li>Passengers : 05</li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                      <ul>
+                        <li>Price : 50000</li>
+                        <li>Fuel Type : Petrol</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Button start -->
+                  <div class="d-grid gap-2 col-6 mx-auto">
+                    <a
+                      href="#!"
+                      class="btn btn-lg rounded-pill btn-light fw-bold"
+                      style="
+                        background-image: linear-gradient(
+                          to right,
+                          #1fa2ff 0%,
+                          #12d8fa 51%,
+                          #1fa2ff 100%
+                        );
+                      "
+                      >Rent</a
+                    >
+                  </div>
+                  <!-- Button End -->
+                </div>
+                <!-- Text End -->
+              </div>
+            </div>
           </div>
         </div>
+        <!-- Rent Car End -->
       </section>
     </main>
+
+    <footer class="bg-light text-center text-lg-start">
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.356)"
+      >
+        © 2022 Copyright:
+        <a class="text-dark" href="#">ijse.lk</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
 
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
