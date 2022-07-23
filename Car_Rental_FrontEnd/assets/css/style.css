@@ -1,4 +1,13 @@
 .navbar{
   margin-bottom: 0;
   border-radius: 0;
+  
+  
 }
+
+
+#homeImg img{
+  width: 100vw;
+  height: 100vh;
+}
+
