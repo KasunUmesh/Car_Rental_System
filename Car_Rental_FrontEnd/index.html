@@ -52,10 +52,22 @@
                 <a class="nav-link" href="#rental">Rental</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Register</a>
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#registerModal"
+                  >Register</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sign in</a>
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-target="#exampleModalToggle2"
+                  data-bs-toggle="modal"
+                  >Sign in</a
+                >
               </li>
             </ul>
           </div>
@@ -86,6 +98,9 @@
                   class="btn btn-outline-light btn-lg m-2"
                   href="#"
                   role="button"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#registerModal"
                   >Register</a
                 >
               </div>
@@ -93,6 +108,266 @@
           </div>
         </div>
         <!-- Home Page -->
+
+        <!-- Register Modal Start -->
+        <div
+          class="modal fade"
+          id="registerModal"
+          aria-hidden="true"
+          aria-labelledby="exampleModalToggleLabel"
+          tabindex="-1"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header justify-content-center">
+                <h5
+                  class="modal-title fw-bold fs-2"
+                  id="exampleModalToggleLabel"
+                >
+                  REGISTER
+                </h5>
+              </div>
+
+              <div class="modal-body">
+                <form class="row g-3 p-4">
+                  <div class="col-md-6">
+                    <label for="regUserName" class="form-label"
+                      >User Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="User Name"
+                      id="regUserName"
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="inputAddress" class="form-label">Address</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputAddress"
+                      placeholder="Address"
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="regEmail" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="regEmail"
+                      placeholder="Email"
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="regContact" class="form-label">Contact</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="regContact"
+                      placeholder="Contact"
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="regNic" class="form-label">NIC</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="regNic"
+                      placeholder="NIC"
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="nicImg" class="form-label">NIC Image</label>
+                    <input
+                      class="form-control"
+                      type="file"
+                      id="nicImg"
+                      placeholder="NIC Image"
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="dlicense" class="form-label"
+                      >Driving License</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="dlicense"
+                      placeholder="Driving License"
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="dlicenseImg" class="form-label"
+                      >Driving License Image</label
+                    >
+                    <input
+                      class="form-control"
+                      type="file"
+                      id="dlicenseImg"
+                      placeholder="Driving License Image"
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="inputPassword4"
+                      placeholder="Password"
+                    />
+                  </div>
+                </form>
+
+                <!-- Register And Sign Button -->
+                <div class="row justify-content-center p-3">
+                  <div class="col-6 d-grid gap-2 mx-auto p-2">
+                    <button
+                      class="btn btn-light btn-lg rounded-pill text-white"
+                      data-bs-target="#exampleModalToggle2"
+                      data-bs-toggle="modal"
+                      style="
+                        background-image: linear-gradient(
+                          to right,
+                          #1fa2ff 0%,
+                          #12d8fa 51%,
+                          #1fa2ff 100%
+                        );
+                      "
+                    >
+                      SIGN IN
+                    </button>
+                  </div>
+                  <div class="col-6 d-grid gap-2 mx-auto p-2">
+                    <button
+                      class="btn btn-light text-white btn-lg rounded-pill"
+                      style="
+                        background-image: linear-gradient(
+                          to right,
+                          #aaffa9 0%,
+                          #11ffbd 51%,
+                          #aaffa9 100%
+                        );
+                      "
+                    >
+                      REGISTER
+                    </button>
+                  </div>
+                </div>
+                <!-- Register And Sign Button -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="exampleModalToggle2"
+          aria-hidden="true"
+          aria-labelledby="exampleModalToggleLabel2"
+          tabindex="-1"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header justify-content-center">
+                <h5
+                  class="modal-title fw-bold fs-2"
+                  id="exampleModalToggleLabel"
+                >
+                  SIGN IN
+                </h5>
+              </div>
+
+              <div class="modal-body">
+                <form class="row g-3 p-4">
+                  <div class="col-md-12">
+                    <label for="signposition" class="form-label"
+                      >Position</label
+                    >
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      id="signposition"
+                    >
+                      <option selected>Select Position</option>
+                      <option value="1">Admin</option>
+                      <option value="2">Customer</option>
+                    </select>
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="signUserName" class="form-label"
+                      >User Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="signUserName"
+                      placeholder="User Name"
+                    />
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="signPassword" class="form-label"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="signPassword"
+                      placeholder="Password"
+                    />
+                  </div>
+                </form>
+
+                <!-- Sign Button -->
+
+                <div class="d-grid gap-2 col-6 mx-auto p-3">
+                  <button
+                    class="btn btn-light btn-lg rounded-pill text-white"
+                    style="
+                      background-image: linear-gradient(
+                        to right,
+                        #1fa2ff 0%,
+                        #12d8fa 51%,
+                        #1fa2ff 100%
+                      );
+                    "
+                  >
+                    SIGN IN
+                  </button>
+                  <a
+                    href=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#registerModal"
+                    class="text-center fs-6"
+                    >REGISTER</a
+                  >
+                </div>
+
+                <!-- Sign Button -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          href="#exampleModalToggle"
+          role="button"
+          >Open first modal</a
+        >
+
+        <!-- Register Modal End -->
 
         <!-- Rent Car Start-->
         <div class="container-fluid" id="rental">
