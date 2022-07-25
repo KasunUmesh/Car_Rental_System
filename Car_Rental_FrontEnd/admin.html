@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Easy Car Rental</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/adminStyle.css" />
+    <link rel="stylesheet" href="assets/css/adminstyle.css" />
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
@@ -14,62 +14,82 @@
     />
   </head>
   <body>
-    <header>
-      <div class="sidebar">
-        <div class="logo_content">
-          <div class="logo">
-            <i class="bx bxs-car"></i>
-            <div class="logo_name">Easy Car Rental</div>
-          </div>
-
-          <i class="bx bx-menu" id="menuBtn"></i>
-        </div>
-
-        <ul class="nav_list">
-          <li>
-            <a href="#">
-              <i class="bx bx-grid-alt"></i>
-              <span class="links_name">Dashboard</span>
-            </a>
-          </li>
-
-          <li>
+    <div class="sidebar close">
+      <div class="logo-details">
+        <i class="bx bxs-car"></i>
+        <span class="logo_name">EasyCarRental</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#">
+            <i class="bx bx-grid-alt"></i>
+            <span class="link_name">Dashboard</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Dashboard</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
             <a href="#">
               <i class="bx bxs-user"></i>
-              <span class="links_name">Customer</span>
+              <span class="link_name">Customer</span>
             </a>
-          </li>
-
-          <li>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Customer</a></li>
+            <li><a href="#">Update</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
             <a href="#">
               <i class="bx bxs-car"></i>
-              <span class="links_name">Manage Car</span>
+              <span class="link_name">Manage Car</span>
             </a>
-          </li>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Manage Car</a></li>
+            <li><a href="#">Add New</a></li>
+            <li><a href="#">Edit</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-message-rounded-dots"></i>
+            <span class="link_name">Rental Request</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Rental Request</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-line-chart"></i>
+            <span class="link_name">Income</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Income</a></li>
+          </ul>
+        </li>
 
-          <li>
-            <a href="#">
-              <i class="bx bxs-message-rounded-dots"></i>
-              <span class="links_name">Rental Request</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              <i class="bx bx-line-chart"></i>
-              <span class="links_name">Income</span>
-            </a>
-          </li>
-        </ul>
-
-        <div class="logout_content">
-          <span class="links_name">Log Out</span>
-          <i class="bx bx-log-out" id="log_"></i>
-        </div>
+        <li>
+          <div class="profile-details">
+            <i class="bx bx-log-out"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="home-content">
+        <i class="bx bx-menu"></i>
+        <span class="text">Dashboard</span>
       </div>
-    </header>
+    </section>
 
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/adminjs.js"></script>
+    <script src="assets/js/admin.js"></script>
   </body>
 </html>
