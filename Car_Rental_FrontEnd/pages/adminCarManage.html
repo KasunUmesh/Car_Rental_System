@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Easy Car Rental</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/adminstyle.css" />
-    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/adminstyle.css" />
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
@@ -21,37 +21,43 @@
       </div>
       <ul class="nav-links">
         <li>
-          <a href="#">
+          <a href="adminDashboard.html">
             <i class="bx bx-grid-alt"></i>
             <span class="link_name">Dashboard</span>
           </a>
           <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">Dashboard</a></li>
+            <li>
+              <a class="link_name" href="adminDashboard.html">Dashboard</a>
+            </li>
           </ul>
         </li>
-        <li>
+        <li class="nav-item" role="presentation">
           <div class="iocn-link">
-            <a href="#">
+            <a href="adminCustomer.html">
               <i class="bx bxs-user"></i>
               <span class="link_name">Customer</span>
             </a>
             <i class="bx bxs-chevron-down arrow"></i>
           </div>
           <ul class="sub-menu">
-            <li><a class="link_name" href="#">Customer</a></li>
+            <li>
+              <a class="link_name" href="adminCustomer.html">Customer</a>
+            </li>
             <li><a href="#">Update</a></li>
           </ul>
         </li>
         <li>
           <div class="iocn-link">
-            <a href="#">
+            <a href="adminCarManage.html">
               <i class="bx bxs-car"></i>
               <span class="link_name">Manage Car</span>
             </a>
             <i class="bx bxs-chevron-down arrow"></i>
           </div>
           <ul class="sub-menu">
-            <li><a class="link_name" href="#">Manage Car</a></li>
+            <li>
+              <a class="link_name" href="adminCarManage.html">Manage Car</a>
+            </li>
             <li><a href="#">Add New</a></li>
             <li><a href="#">Edit</a></li>
           </ul>
@@ -82,14 +88,49 @@
         </li>
       </ul>
     </div>
-    <section class="home-section">
-      <div class="home-content">
-        <i class="bx bx-menu"></i>
-        <span class="text">Dashboard</span>
-      </div>
-    </section>
 
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/admin.js"></script>
+    <div>
+      <section class="home-section" style="border: 1px solid red">
+        <div class="home-content">
+          <i class="bx bx-menu"></i>
+          <span class="text">MANAGE VEHICLE</span>
+        </div>
+
+        <div class="container-fluid">
+          <div
+            class="row justify-content-center"
+            style="border: 1px solid green"
+          >
+            <div class="col-md-10">
+              <form class="row g-3">
+                <div class="col-md-4">
+                  <label for="inputRegNo" class="form-label"
+                    >Registration Number</label
+                  >
+                  <input type="text" class="form-control" id="inputRegNo" />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="inputRegNo" class="form-label"
+                    >Registration Number</label
+                  >
+                  <input type="text" class="form-control" id="inputRegNo" />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="inputRegNo" class="form-label"
+                    >Registration Number</label
+                  >
+                  <input type="text" class="form-control" id="inputRegNo" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/admin.js"></script>
   </body>
 </html>

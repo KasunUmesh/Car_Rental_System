@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Car Rental</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/adminstyle.css" />
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar close">
+      <div class="logo-details">
+        <i class="bx bxs-car"></i>
+        <span class="logo_name">EasyCarRental</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="adminDashboard.html">
+            <i class="bx bx-grid-alt"></i>
+            <span class="link_name">Dashboard</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li>
+              <a class="link_name" href="adminDashboard.html">Dashboard</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" role="presentation">
+          <div class="iocn-link">
+            <a href="adminCustomer.html">
+              <i class="bx bxs-user"></i>
+              <span class="link_name">Customer</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li>
+              <a class="link_name" href="adminCustomer.html">Customer</a>
+            </li>
+            <li><a href="#">Update</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="adminCarManage.html">
+              <i class="bx bxs-car"></i>
+              <span class="link_name">Manage Car</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li>
+              <a class="link_name" href="adminCarManage.html">Manage Car</a>
+            </li>
+            <li><a href="#">Add New</a></li>
+            <li><a href="#">Edit</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-message-rounded-dots"></i>
+            <span class="link_name">Rental Request</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Rental Request</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-line-chart"></i>
+            <span class="link_name">Income</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Income</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="profile-details">
+            <i class="bx bx-log-out"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <section class="home-section" style="border: 1px solid red">
+        <div class="home-content">
+          <i class="bx bx-menu"></i>
+          <span class="text">Customers Manage</span>
+        </div>
+
+        <div class="container-fluid">
+          <div
+            class="row justify-content-center"
+            style="border: 1px solid green"
+          >
+            <div class="col-md-4">
+              <form>
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="email" id="form1Example1" class="form-control" />
+                  <label class="form-label" for="form1Example1"
+                    >Email address</label
+                  >
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <input
+                    type="password"
+                    id="form1Example2"
+                    class="form-control"
+                  />
+                  <label class="form-label" for="form1Example2">Password</label>
+                </div>
+
+                <!-- 2 column grid layout for inline styling -->
+                <div class="row mb-4">
+                  <div class="col d-flex justify-content-center">
+                    <!-- Checkbox -->
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="form1Example3"
+                        checked
+                      />
+                      <label class="form-check-label" for="form1Example3">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <!-- Simple link -->
+                    <a href="#!">Forgot password?</a>
+                  </div>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block">
+                  Sign in
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/admin.js"></script>
+  </body>
+</html>
