@@ -99,54 +99,77 @@
         <div class="container-fluid">
           <div class="row justify-content-center">
             <div class="col-md-10">
-              <form class="row g-4 pt-5">
+              <form class="row g-4 pt-5" id="vehicleForm">
                 <div class="col-md-4">
-                  <label for="inputRegNo" class="form-label"
+                  <label for="regNo" class="form-label"
                     >Registration Number</label
                   >
                   <input
                     type="text"
                     class="form-control"
-                    id="inputRegNo"
+                    id="regNo"
                     placeholder="Reg No"
                   />
                 </div>
 
                 <div class="col-md-4">
-                  <label for="inputRegNo" class="form-label">Brand</label>
+                  <label for="brand" class="form-label">Brand</label>
                   <input
                     type="text"
                     class="form-control"
-                    id="inputRegNo"
+                    id="brand"
                     placeholder="Vehicle Brand"
                   />
                 </div>
 
                 <div class="col-md-4">
-                  <label for="inputRegNo" class="form-label">Type</label>
+                  <label for="type" class="form-label">Type</label>
                   <input
                     type="text"
                     class="form-control"
-                    id="inputRegNo"
+                    id="type"
                     placeholder="Vehicle Type"
                   />
                 </div>
 
                 <div class="col-md-4">
-                  <label for="inputRegNo" class="form-label">Color</label>
+                  <label for="color" class="form-label">Color</label>
                   <input
                     type="text"
                     class="form-control"
-                    id="inputRegNo"
+                    id="color"
                     placeholder="Vehicle Color"
                   />
                 </div>
 
                 <div class="col-md-4">
-                  <label for="inputRegNo" class="form-label">Fuel Type</label>
+                  <label for="fuelType" class="form-label">Fuel Type</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fuelType"
+                    placeholder="Fuel Type"
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="transmission" class="form-label"
+                    >Transmission</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="transmission"
+                    placeholder="Vehicle Color"
+                  />
+                </div>
+
+                <!-- <div class="col-md-4">
+                  <label for="fuelType" class="form-label">Fuel Type</label>
                   <select
                     class="form-select"
                     aria-label="Default select example"
+                    id="fuelType"
                   >
                     <option selected>Select Fuel Type</option>
                     <option value="1">Diesel</option>
@@ -155,87 +178,108 @@
                 </div>
 
                 <div class="col-md-4">
-                  <label for="inputRegNo" class="form-label"
+                  <label for="transmission" class="form-label"
                     >Transmission</label
                   >
                   <select
                     class="form-select"
                     aria-label="Default select example"
+                    id="transmission"
                   >
                     <option selected>Select Transmission</option>
                     <option value="1">Auto</option>
                     <option value="2">Manual</option>
                   </select>
-                </div>
+                </div> -->
 
                 <div class="col-md-4">
-                  <label for="inputRegNo" class="form-label"
+                  <label for="passengers" class="form-label"
                     >Number of Passengers</label
                   >
                   <input
                     type="text"
                     class="form-control"
-                    id="inputRegNo"
+                    id="passengers"
                     placeholder="Passengers"
                   />
                 </div>
 
                 <div class="col-md-4">
-                  <label for="inputRegNo" class="form-label">Mileage</label>
+                  <label for="mileage" class="form-label">Mileage</label>
                   <input
                     type="text"
                     class="form-control"
-                    id="inputRegNo"
+                    id="mileage"
                     placeholder="Free mileage for the price and duration"
                   />
                 </div>
 
                 <div class="col-md-4">
-                  <label for="inputRegNo" class="form-label"
+                  <label for="rentedStatus" class="form-label"
                     >Rented Status</label
                   >
                   <input
                     type="text"
                     class="form-control"
-                    id="inputRegNo"
+                    id="rentedStatus"
                     placeholder="Rented Status"
                   />
                 </div>
 
-                <div class="col-md-3">
-                  <label for="formFile" class="form-label"
+                <!-- <div class="col-md-3">
+                  <label for="frontImg" class="form-label"
                     >Front View Image</label
                   >
-                  <input class="form-control" type="file" id="formFile" />
+                  <input class="form-control" type="file" id="frontImg" />
                 </div>
 
                 <div class="col-md-3">
-                  <label for="formFile" class="form-label"
+                  <label for="backImg" class="form-label"
                     >Back View Image</label
                   >
-                  <input class="form-control" type="file" id="formFile" />
+                  <input class="form-control" type="file" id="backImg" />
                 </div>
 
                 <div class="col-md-3">
-                  <label for="formFile" class="form-label"
+                  <label for="sideImg" class="form-label"
                     >Side View Image</label
                   >
-                  <input class="form-control" type="file" id="formFile" />
+                  <input class="form-control" type="file" id="sideImg" />
                 </div>
 
                 <div class="col-md-3">
-                  <label for="formFile" class="form-label"
+                  <label for="interiorImg" class="form-label"
                     >Interior View Image</label
                   >
-                  <input class="form-control" type="file" id="formFile" />
-                </div>
+                  <input class="form-control" type="file" id="interiorImg" />
+                </div> -->
 
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end pt-3">
                   <button
+                    class="btn btn-success btn-lg rounded-pill"
+                    type="button"
+                    id="btnSaveVehicle"
+                  >
+                    <i class="bx bxs-save fs-5"></i>
+                    Save Vehicle
+                  </button>
+
+                  <button
+                    class="btn btn-danger btn-lg rounded-pill"
+                    type="button"
+                    id="btnSaveVehicle"
+                  >
+                    <i class="bx bxs-trash"></i>
+                    Delete
+                  </button>
+
+                  <button
                     class="btn btn-primary btn-lg rounded-pill"
                     type="button"
+                    id="btnSaveVehicle"
                   >
-                    Save Vehicle
+                    <i class="bx bxs-edit-alt"></i>
+                    Update
                   </button>
                 </div>
               </form>
@@ -258,35 +302,20 @@
                     <th>Passengers</th>
                     <th>Mileage</th>
                     <th>Rented Status</th>
-                    <th>Actions</th>
                   </tr>
                 </thead>
 
-                <tbody class="text-center table-info">
+                <tbody class="text-center table-info" id="tblVehicle">
                   <tr>
-                    <td>001</td>
-                    <td>BMW</td>
-                    <td>Luxury</td>
-                    <td>White</td>
-                    <td>Petrol</td>
-                    <td>Auto</td>
-                    <td>04</td>
-                    <td>100km</td>
-                    <td>Available</td>
-                    <td class="text-center">
-                      <button
-                        type="button"
-                        class="btn btn-link btn-sm rounded-pill bx-tada-hover"
-                      >
-                        <i class="bx bxs-edit-alt fs-4"></i>
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-link btn-sm rounded-pill bx-tada-hover"
-                      >
-                        <i class="bx bxs-trash fs-4"></i>
-                      </button>
-                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                 </tbody>
               </table>
@@ -298,5 +327,52 @@
 
     <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/admin.js"></script>
+    <script src="../assets/jQuery/jquery-3.6.0.min.js"></script>
+
+    <script>
+      var baseUrl = "http://localhost:8080/Car_Rental_Back_End_war/vehicle";
+
+      $("#btnSaveVehicle").click(function () {
+        saveVehicle();
+      });
+
+      loadAllVehicle();
+
+      function saveVehicle() {
+        var data = $("#vehicleForm").serialize();
+
+        $.ajax({
+          url: baseUrl,
+          method: "POST",
+          data: data,
+          success: function (res) {
+            if (res.Code == 200) {
+              alert("Successfully Vehicle Save");
+              loadAllVehicle();
+            }
+          },
+          error: function (ob) {
+            alert(ob.responseJSON.message);
+          },
+        });
+      }
+
+      function loadAllVehicle() {
+        $("#tblVehicle").empty();
+        $.ajax({
+          url: baseUrl,
+          method: "GET",
+          success: function (resp) {
+            for (const vehicle of resp.data) {
+              let row = `<tr><td>${vehicle.regNo}</td><td>${vehicle.brand}</td><td>${vehicle.type}</td><td>${vehicle.transmission}</td><td>${vehicle.color}</td><td>${vehicle.passengers}</td><td>${vehicle.fuelType}</td><td>${vehicle.mileage}</td><td>${vehicle.rentedStatus}</td></tr>`;
+              $("#tblVehicle").append(row);
+            }
+          },
+          error: function (ob) {
+            alert(ob.responseJSON.message);
+          },
+        });
+      }
+    </script>
   </body>
 </html>

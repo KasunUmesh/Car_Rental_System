@@ -4,6 +4,7 @@ import lk.ijse.car_rental_system.dto.VehicleDTO;
 import lk.ijse.car_rental_system.service.VehicleService;
 import lk.ijse.car_rental_system.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,6 +16,7 @@ public class VehicleController {
     @Autowired
     VehicleService vehicleService;
 
+    @ResponseStatus(HttpStatus.CREATED)
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseUtil saveVehicle(@ModelAttribute VehicleDTO vehicleDTO) {
         vehicleService.saveVehicle(vehicleDTO);

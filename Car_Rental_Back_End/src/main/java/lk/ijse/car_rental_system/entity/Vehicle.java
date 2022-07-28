@@ -18,10 +18,10 @@ public class Vehicle {
     private String regNo;
     private String brand;
     private String type;
-    private String transmission;
     private String color;
-    private String passengers;
     private String fuelType;
+    private String transmission;
+    private String passengers;
     private String mileage;
     private String rentedStatus;
 }
