@@ -43,7 +43,6 @@
             <li>
               <a class="link_name" href="adminCustomer.html">Customer</a>
             </li>
-            <li><a href="#">Update</a></li>
           </ul>
         </li>
         <li>
@@ -58,10 +57,23 @@
             <li>
               <a class="link_name" href="adminCarManage.html">Manage Car</a>
             </li>
-            <li><a href="#">Add New</a></li>
-            <li><a href="#">Edit</a></li>
           </ul>
         </li>
+
+        <li>
+          <a href="adminDriverManage.html">
+            <i class="bx bxs-group"></i>
+            <span class="link_name">Manage Drivers</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li>
+              <a class="link_name" href="adminDriverManage.html"
+                >Manage Drivers</a
+              >
+            </li>
+          </ul>
+        </li>
+
         <li>
           <a href="#">
             <i class="bx bxs-message-rounded-dots"></i>
@@ -344,10 +356,10 @@
         $.ajax({
           url: baseUrl,
           method: "POST",
-          data: data,
+          data: data, // if we send data with the request
           success: function (res) {
-            if (res.Code == 200) {
-              alert("Successfully Vehicle Save");
+            if (res.code == 200) {
+              alert("Successfully Vehicle Registered");
               loadAllVehicle();
             }
           },

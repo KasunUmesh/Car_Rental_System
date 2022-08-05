@@ -43,7 +43,6 @@
             <li>
               <a class="link_name" href="adminCustomer.html">Customer</a>
             </li>
-            <li><a href="#">Update</a></li>
           </ul>
         </li>
         <li>
@@ -58,8 +57,19 @@
             <li>
               <a class="link_name" href="adminCarManage.html">Manage Car</a>
             </li>
-            <li><a href="#">Add New</a></li>
-            <li><a href="#">Edit</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="adminDriverManage.html">
+            <i class="bx bxs-group"></i>
+            <span class="link_name">Manage Drivers</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li>
+              <a class="link_name" href="adminDriverManage.html"
+                >Manage Drivers</a
+              >
+            </li>
           </ul>
         </li>
         <li>
@@ -83,17 +93,56 @@
 
         <li>
           <div class="profile-details">
-            <i class="bx bx-log-out"></i>
+            <i
+              class="bx bx-log-out"
+              data-bs-toggle="modal"
+              data-bs-target="#logOutModal"
+            ></i>
           </div>
         </li>
       </ul>
     </div>
 
     <div>
-      <section class="home-section" style="border: 1px solid red">
+      <section class="home-section">
         <div class="home-content">
           <i class="bx bx-menu"></i>
           <span class="text">Dashboard</span>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="logOutModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Log Out</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <a href="../index.html"
+                  ><button type="button" class="btn btn-primary">Yes</button></a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

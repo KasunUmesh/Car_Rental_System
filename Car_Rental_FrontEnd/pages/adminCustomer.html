@@ -43,7 +43,6 @@
             <li>
               <a class="link_name" href="adminCustomer.html">Customer</a>
             </li>
-            <li><a href="#">Update</a></li>
           </ul>
         </li>
         <li>
@@ -58,10 +57,23 @@
             <li>
               <a class="link_name" href="adminCarManage.html">Manage Car</a>
             </li>
-            <li><a href="#">Add New</a></li>
-            <li><a href="#">Edit</a></li>
           </ul>
         </li>
+
+        <li>
+          <a href="adminDriverManage.html">
+            <i class="bx bxs-group"></i>
+            <span class="link_name">Manage Drivers</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li>
+              <a class="link_name" href="adminDriverManage.html"
+                >Manage Drivers</a
+              >
+            </li>
+          </ul>
+        </li>
+
         <li>
           <a href="#">
             <i class="bx bxs-message-rounded-dots"></i>
@@ -90,67 +102,64 @@
     </div>
 
     <div>
-      <section class="home-section" style="border: 1px solid red">
+      <section class="home-section">
         <div class="home-content">
           <i class="bx bx-menu"></i>
           <span class="text">Customers Manage</span>
         </div>
 
         <div class="container-fluid">
-          <div
-            class="row justify-content-center"
-            style="border: 1px solid green"
-          >
-            <div class="col-md-4">
-              <form>
-                <!-- Email input -->
-                <div class="form-outline mb-4">
-                  <input type="email" id="form1Example1" class="form-control" />
-                  <label class="form-label" for="form1Example1"
-                    >Email address</label
-                  >
-                </div>
+          <div class="row justify-content-center pt-5">
+            <div class="col-md-11">
+              <table class="table align-middle mb-0 bg-light table-hover">
+                <thead class="bg-success text-center text-white">
+                  <tr>
+                    <th>User Name</th>
+                    <th>Address</th>
+                    <th>NIC</th>
+                    <th>Driver Licen</th>
+                    <th>Email</th>
+                    <th>Contact Number</th>
+                    <th>Password</th>
+                  </tr>
+                </thead>
 
-                <!-- Password input -->
-                <div class="form-outline mb-4">
-                  <input
-                    type="password"
-                    id="form1Example2"
-                    class="form-control"
-                  />
-                  <label class="form-label" for="form1Example2">Password</label>
-                </div>
-
-                <!-- 2 column grid layout for inline styling -->
-                <div class="row mb-4">
-                  <div class="col d-flex justify-content-center">
-                    <!-- Checkbox -->
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="form1Example3"
-                        checked
-                      />
-                      <label class="form-check-label" for="form1Example3">
-                        Remember me
-                      </label>
-                    </div>
-                  </div>
-
-                  <div class="col">
-                    <!-- Simple link -->
-                    <a href="#!">Forgot password?</a>
-                  </div>
-                </div>
-
-                <!-- Submit button -->
-                <button type="submit" class="btn btn-primary btn-block">
-                  Sign in
-                </button>
-              </form>
+                <tbody class="text-center table-info" id="tblcustomer">
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+          </div>
+
+          <div
+            class="d-grid gap-2 d-md-flex justify-content-md-end pt-3 m-5 col-11"
+          >
+            <button
+              class="btn btn-primary btn-lg rounded-pill"
+              type="button"
+              id="btnSaveVehicle"
+            >
+              <i class="bx bxs-edit-alt"></i>
+              Update
+            </button>
+
+            <button
+              class="btn btn-danger btn-lg rounded-pill"
+              type="button"
+              id="btnSaveVehicle"
+            >
+              <i class="bx bxs-trash"></i>
+              Delete
+            </button>
           </div>
         </div>
       </section>
@@ -158,5 +167,29 @@
 
     <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/admin.js"></script>
+    <script src="../assets/jQuery/jquery-3.6.0.min.js"></script>
+
+    <script>
+      var baseUrl = "http://localhost:8080/Car_Rental_Back_End_war/customer";
+
+      loadAllDrivers();
+
+      function loadAllDrivers() {
+        $("#tblcustomer").empty();
+        $.ajax({
+          url: baseUrl,
+          method: "GET",
+          success: function (resp) {
+            for (const customer of resp.data) {
+              let row = `<tr><td>${customer.userName}</td><td>${customer.address}</td><td>${customer.nic}</td><td>${customer.driverlicen}</td><td>${customer.email}</td><td>${customer.contact}</td><td>${customer.password}</td></tr>`;
+              $("#tblcustomer").append(row);
+            }
+          },
+          error: function (ob) {
+            alert(ob.responseJSON.message);
+          },
+        });
+      }
+    </script>
   </body>
 </html>
